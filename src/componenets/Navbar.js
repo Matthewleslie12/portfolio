@@ -1,17 +1,16 @@
 import logo from "../assets/Logo.svg";
-import Resume from "../assets/Matthew_Leslie-Resume.pdf";
+import Resume from "../assets/Matthew_Leslie-Resume (1).pdf";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
     <>
-      <div className=" flex justify-between px-8 items-center py-[25px]">
+      <div className=" flex justify-between  items-center py-[25px]">
         <img
           src={logo}
           alt=" keyboard keycap with the letter m on top"

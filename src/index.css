@@ -5,3 +5,37 @@
 /* ::root {
     --primary-color: ;
 } */
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel .slider-wrapper {
+    overflow: hidden;
+  }
+  
+  .carousel .slider {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel .control-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .carousel .control-dots .dot {
+    margin: 0 5px;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background-color: #000;
+  }
+  
+ 
