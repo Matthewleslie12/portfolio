@@ -1,4 +1,5 @@
 import Navbar from "./componenets/Navbar";
+import About from "./pages/About";
 import Hero from "./pages/Hero";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App bg-gray-200 px-8">
       <Navbar />
       <Hero />
+      <About />
     </div>
   );
 }

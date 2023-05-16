@@ -21,7 +21,7 @@ const Hero = () => {
           stunning and functionally robust.
         </p>
       </div>
-      <Button text="Get to know me!" />
+      <Button text="About me!" />
       <Images />
     </div>
   );
