@@ -15,6 +15,7 @@
   .carousel .slider {
     display: flex;
     align-items: center;
+
   }
   
   .carousel .control-dots {
@@ -31,10 +32,10 @@
   }
   
   .carousel .control-dots .dot.selected {
-    background-color: #000;
+    background-color: #9EC9BA;
   }
   
- 
+
   h1 {
     padding-block: 1rem ;
     font-weight: bold;
