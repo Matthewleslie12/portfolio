@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ::root {
-    --primary-color: ;
-} */
-
 .carousel .slide {
     display: flex;
     justify-content: center;
@@ -39,3 +35,9 @@
   }
   
  
+  h1 {
+    padding-block: 1rem ;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }

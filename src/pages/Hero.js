@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="flex flex-col pt-5">
       <div className="space-y-2">
         <p className="text-red-300">Hey, I'm</p>
-        <h4 className="">Matthew Leslie.</h4>
+        <h4 className="font-bold text-2xl">Matthew Leslie.</h4>
         <p className="pb-5">
           A
           <span className="bg-[#9EC9BA] px-[0.4em] rounded-md">
