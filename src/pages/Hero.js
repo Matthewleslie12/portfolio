@@ -21,6 +21,7 @@ const Hero = () => {
             and am passionate about creating things that are both visually
             stunning and functionally robust.
           </p>
+
           <Button text="Learn about me!" />
         </div>
       </div>

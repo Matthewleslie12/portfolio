@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="pt-8 md:w-[95%]">
+    <div className="pt-8 md:w-[95%]" id="about">
       <h1 className="md:text-5xl">About me</h1>
       <p className="pb-6 md:pb-2 md:text-lg ">
         Hello, I am originally from England but moved to Toronto at the end of

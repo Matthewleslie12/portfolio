@@ -19,7 +19,7 @@ const Navbar = () => {
         />
 
         <nav className="hidden md:flex gap-5">
-          <a href="#/" className="">
+          <a href="#about" className="">
             About
           </a>
           <a href="#tech" className="">

@@ -50,7 +50,10 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex flex-col relative items-center md:mt-20">
+      <div
+        className="flex flex-col relative items-center md:mt-20"
+        id="contact"
+      >
         <h1 className="md:text-5xl">Get In Touch</h1>
 
         {submissionStatus === "success" ? (

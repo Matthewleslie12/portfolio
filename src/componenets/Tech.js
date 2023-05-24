@@ -28,7 +28,7 @@ const Tech = () => {
   };
 
   return (
-    <>
+    <div id="tech">
       <h1 className="md:text-5xl ">Tech Stack</h1>
       <div className="grid grid-cols-5 items-center space-y-2 md:py-8 md:grid-cols-8 md:w-[90%]">
         {icons.map((image) => (
@@ -44,7 +44,7 @@ const Tech = () => {
         ))}
         <Tooltip id="my-tooltip" />
       </div>
-    </>
+    </div>
   );
 };
 
