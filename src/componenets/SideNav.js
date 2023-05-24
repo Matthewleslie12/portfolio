@@ -3,7 +3,6 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 import { DiNpm } from "react-icons/di";
 import "react-tooltip/dist/react-tooltip.css";
-import { Tooltip } from "react-tooltip";
 
 const SideNav = () => {
   return (
