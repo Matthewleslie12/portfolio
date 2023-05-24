@@ -64,7 +64,6 @@ const SideNav = () => {
       <div className=" pt-2 px-4">
         <div className="w-[2px] h-20 bg-red-300"></div>
       </div>
-      <Tooltip id="my-tooltip" />
     </div>
   );
 };
