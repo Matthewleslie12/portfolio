@@ -9,7 +9,7 @@ const ProjectCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/projects")
+      .get("https://portfolio-image-server.onrender.com/projects/")
       .then((response) => {
         setProjects(response.data);
         setDescriptions(response.data.map((project) => project.description));
@@ -22,7 +22,7 @@ const ProjectCard = () => {
   const getImageUrlById = (id) => {
     const project = projects.find((proj) => proj.id === id);
     if (project) {
-      return `http://localhost:8080/projects/${project.image}`;
+      return `https://portfolio-image-server.onrender.com/projects/${project.image}`;
     }
     return null;
   };

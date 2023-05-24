@@ -18,20 +18,37 @@ const Navbar = () => {
           className="w-12 active:shadow-inner active:scale-95 active:translate-y-1/12 active:brightness-60 cursor-pointer"
         />
 
-        <nav className="hidden md:flex gap-5">
-          <a href="#about" className="">
+        <nav className="hidden md:flex gap-5 ">
+          <a
+            href="#about"
+            className="hover:underline underline-offset-4 decoration-red-400"
+          >
             About
           </a>
-          <a href="#tech" className="">
+          <a
+            href="#tech"
+            className="hover:underline underline-offset-4 decoration-red-400"
+          >
             Tech
           </a>
-          <a href="#projects" className="">
+          <a
+            href="#projects"
+            className="hover:underline underline-offset-4 decoration-red-400"
+          >
             Projects
           </a>
-          <a href="#contact" className="">
+          <a
+            href="#contact"
+            className="hover:underline underline-offset-4 decoration-red-400"
+          >
             Contact
           </a>
-          <a href={Resume} target="_blank" rel="noreferrer">
+          <a
+            href={Resume}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline underline-offset-4 decoration-red-400"
+          >
             Resume
           </a>
         </nav>

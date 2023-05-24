@@ -9,7 +9,7 @@ const Images = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/images")
+      .get("https://portfolio-image-server.onrender.com/images/")
       .then((response) => {
         setImages(response.data);
         setDescriptions(response.data.map((image) => image.description));
@@ -22,7 +22,7 @@ const Images = () => {
   const getImageUrlById = (id) => {
     const image = images.find((img) => img.id === id);
     if (image) {
-      return `http://localhost:8080/images/${image.image}`;
+      return `https://portfolio-image-server.onrender.com/images/${image.image}`;
     }
     return null;
   };

@@ -22,7 +22,7 @@ const Tech = () => {
   const getIconByURL = (id) => {
     const icon = icons.find((icon) => icon.id === id);
     if (icon) {
-      return `http://localhost:8080/icons/${icon.icon}`;
+      return `https://portfolio-image-server.onrender.com/icons/${icon.icon}`;
     }
     return null;
   };
