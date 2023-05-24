@@ -19,6 +19,8 @@ body {
   
   .carousel .slider-wrapper {
     overflow: hidden;
+    width: max-content;
+
   }
   
   .carousel .slider {
