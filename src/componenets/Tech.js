@@ -29,13 +29,14 @@ const Tech = () => {
 
   return (
     <>
-      <h1>Tech Stack</h1>
-      <div className="grid grid-cols-5 items-center space-y-2">
+      <h1 className="md:text-5xl ">Tech Stack</h1>
+      <div className="grid grid-cols-5 items-center space-y-2 md:py-8 md:grid-cols-8 md:w-[90%]">
         {icons.map((image) => (
           <img
+            key={image.id}
             src={getIconByURL(image.id)}
             alt={image.name}
-            className="w-16 rounded-full"
+            className="w-16 rounded-full md:w-28"
             data-tooltip-id="my-tooltip"
             data-tooltip-content={image.name}
             data-tooltip-place="top"

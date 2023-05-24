@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Carousel } from "react-responsive-carousel";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
@@ -31,43 +30,39 @@ const ProjectCard = () => {
   };
 
   return (
-    <>
-      <Carousel
-        swipeable
-        infiniteLoop
-        showThumbs={false}
-        centerMode
-        centerSlidePercentage={95}
-        showIndicators={false}
-      >
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="flex flex-col items-center rounded-lg  md:flex-row md:max-w-xl shadow-lg"
-          >
-            <img
-              src={getImageUrlById(project.id)}
-              alt={project.name}
-              className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-            />
-            <div className="flex flex-col ">
-              <h5 className="mb-2 text-2xl font-bold text-black dark:text-black">
+    <div className="">
+      {projects.map((project) => (
+        <div class="max-w-sm w-full lg:max-w-full lg:flex mb-4 md:mb-6">
+          <img
+            alt={project.name}
+            src={getImageUrlById(project.id)}
+            class="h-48 lg:h-auto lg:w-96 flex-none  rounded-lg rounded-r-none text-center overflow-hidden w-full aspect-video object-center object-cover "
+          />
+          <div class="shadow-md  bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="mb-8">
+              <div class="text-gray-900 font-bold text-xl mb-2">
                 {project.name}
-              </h5>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-700 px-2">
-                {project.description}
-              </p>
+              </div>
+              <p class="text-gray-700 text-base">{project.description}</p>
+            </div>
+            <div class="flex items-center space-x-4">
               <button
                 onClick={() => handleViewProject(project.URL)}
-                className="bg-red-300 hover:bg-red-400 text-white font-bold px-4 rounded-lg h-14 "
+                className="inline-flex items-center py-2 text-sm md:text-lg text-white bg-red-300 rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
               >
                 View Project
               </button>
+              <button
+                onClick={() => handleViewProject(project.Github)}
+                className="inline-flex items-center  py-2 text-sm md:text-lg text-white bg-[#9EC9BA] rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
+              >
+                View Code
+              </button>
             </div>
           </div>
-        ))}
-      </Carousel>
-    </>
+        </div>
+      ))}
+    </div>
   );
 };
 

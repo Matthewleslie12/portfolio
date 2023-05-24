@@ -4,6 +4,7 @@ import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
+import { DiNpm } from "react-icons/di";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -73,7 +74,14 @@ const Navbar = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <AiFillLinkedin size={28} />
+              <AiFillLinkedin size={28} color="#0077b5" />
+            </a>
+            <a
+              href="https://www.npmjs.com/~matthewleslie"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <DiNpm size={28} color="red" />
             </a>
             <a
               href="https://medium.com/@matthewleslie155"
