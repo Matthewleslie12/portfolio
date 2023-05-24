@@ -1,5 +1,5 @@
 import logo from "../assets/Logo.svg";
-import Resume from "../assets/Matthew_Leslie-Resume (1).pdf";
+import Resume from "../assets/Matthew_Leslie_Resume.pdf";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
