@@ -5,7 +5,7 @@ import { getTechStackIcons } from "./Icons";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
-  const [descriptions, setDescriptions] = useState([]);
+  const [, setDescriptions] = useState([]);
 
   useEffect(() => {
     axios
