@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Images = () => {
   const [images, setImages] = useState([]);
-  const [descriptions, setDescriptions] = useState([]);
+  const [, setDescriptions] = useState([]);
 
   useEffect(() => {
     axios
