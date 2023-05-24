@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { FaGlobe, FaGithub } from "react-icons/fa";
+import { getTechStackIcons } from "./Icons";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
@@ -43,19 +45,33 @@ const ProjectCard = () => {
               <div class="text-gray-900 font-bold text-xl mb-2">
                 {project.name}
               </div>
+              <div class="flex items-center mb-2">
+                {getTechStackIcons(project.icons).map((icon) => (
+                  <span class="mr-2 text-xl text-gray-500">{icon}</span>
+                ))}
+              </div>
+              <div class="flex items-center mb-2">
+                {getTechStackIcons(project.description).map((icon) => (
+                  <span class="mr-2 text-xl text-gray-500">{icon}</span>
+                ))}
+              </div>
               <p class="text-gray-700 text-base">{project.description}</p>
             </div>
             <div class="flex items-center space-x-4">
-              <button
-                onClick={() => handleViewProject(project.URL)}
-                className="inline-flex items-center py-2 text-sm md:text-lg text-white bg-red-300 rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
-              >
-                View Project
-              </button>
+              {project.URL && (
+                <button
+                  onClick={() => handleViewProject(project.URL)}
+                  className="inline-flex items-center py-2 text-sm md:text-lg text-white bg-red-300 rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
+                >
+                  <FaGlobe class="mr-2" />
+                  View Project
+                </button>
+              )}
               <button
                 onClick={() => handleViewProject(project.Github)}
                 className="inline-flex items-center  py-2 text-sm md:text-lg text-white bg-[#9EC9BA] rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
               >
+                <FaGithub class="mr-2" />
                 View Code
               </button>
             </div>
