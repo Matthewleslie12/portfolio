@@ -10,7 +10,7 @@ const Tech = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/icons")
+      .get("https://portfolio-image-server.onrender.com/icons/")
       .then((response) => {
         setIcons(response.data);
       })

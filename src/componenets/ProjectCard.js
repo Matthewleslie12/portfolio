@@ -38,9 +38,9 @@ const ProjectCard = () => {
           <img
             alt={project.name}
             src={getImageUrlById(project.id)}
-            class="h-48 lg:h-auto lg:w-96 flex-none  rounded-lg rounded-r-none text-center overflow-hidden w-full aspect-video object-center object-cover "
+            class="h-48 lg:h-auto lg:w-96 flex-none rounded-b-none rounded-lg  lg:rounded-r-none text-center overflow-hidden w-full aspect-video object-center object-cover "
           />
-          <div class="shadow-md  bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="shadow-md  bg-white rounded-lg rounded-t-none  lg:rounded-l-none p-4 flex flex-col justify-between leading-normal">
             <div class="mb-8">
               <div class="text-gray-900 font-bold text-xl mb-2">
                 {project.name}

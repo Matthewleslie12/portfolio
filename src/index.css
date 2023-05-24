@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --green-color: #9EC9BA;
+html {
+  scroll-behavior: smooth;
 }
 
 body {

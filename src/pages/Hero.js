@@ -10,12 +10,12 @@ const Hero = () => {
           <p className="text-red-400 md:text-lg">Hey, I'm</p>
           <h4 className="font-bold text-2xl md:text-6xl">Matthew Leslie.</h4>
           <p className="pb-5 md:text-lg w-[90%]">
-            A
-            <span className="bg-[#9EC9BA] px-[0.1em] rounded-md">
+            A{" "}
+            <span className="bg-[#9EC9BA] px-1 rounded-md">
               full stack web developer
-            </span>
+            </span>{" "}
             with skills in{" "}
-            <span className="bg-[#9EC9BA] px-[0.1em] rounded-md">
+            <span className="bg-[#9EC9BA] px-1 rounded-md">
               React, Javascript, Node and MySQL
             </span>{" "}
             and am passionate about creating things that are both visually
