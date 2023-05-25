@@ -67,13 +67,15 @@ const ProjectCard = () => {
                   View Project
                 </button>
               )}
-              <button
-                onClick={() => handleViewProject(project.Github)}
-                className="inline-flex items-center  py-2 text-sm md:text-lg text-white bg-[#9EC9BA] rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
-              >
-                <FaGithub class="mr-2" />
-                View Code
-              </button>
+              {project.Github && (
+                <button
+                  onClick={() => handleViewProject(project.Github)}
+                  className="inline-flex items-center py-2 text-sm md:text-lg text-white bg-[#9EC9BA] rounded-lg hover:bg-[#7d9f93] w-full font-bold h-14 justify-center "
+                >
+                  <FaGithub class="mr-2" />
+                  View Code
+                </button>
+              )}
             </div>
           </div>
         </div>
