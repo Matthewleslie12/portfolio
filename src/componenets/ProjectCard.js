@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 import axios from "axios";
-import { FaGlobe, FaGithub } from "react-icons/fa";
-import { getTechStackIcons } from "./Icons";
+import {FaGlobe, FaGithub} from "react-icons/fa";
+import {getTechStackIcons} from "./Icons";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
@@ -34,7 +34,7 @@ const ProjectCard = () => {
   return (
     <div className="">
       {projects.map((project) => (
-        <div class="max-w-sm w-full lg:max-w-full lg:flex mb-4 md:mb-6">
+        <div class="max-w-sm w-full md:max-w-full lg:flex mb-4 md:mb-6">
           <img
             alt={project.name}
             src={getImageUrlById(project.id)}
@@ -57,11 +57,11 @@ const ProjectCard = () => {
               </div>
               <p class="text-gray-700 text-base">{project.description}</p>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2">
               {project.URL && (
                 <button
                   onClick={() => handleViewProject(project.URL)}
-                  className="inline-flex items-center py-2 text-sm md:text-lg text-white bg-red-300 rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
+                  className="inline-flex items-center py-2 text-xs md:text-lg text-white bg-red-300 rounded-lg hover:bg-red-400 w-full font-bold h-14 justify-center "
                 >
                   <FaGlobe class="mr-2" />
                   View Project
@@ -70,7 +70,7 @@ const ProjectCard = () => {
               {project.Github && (
                 <button
                   onClick={() => handleViewProject(project.Github)}
-                  className="inline-flex items-center py-2 text-sm md:text-lg text-white bg-[#9EC9BA] rounded-lg hover:bg-[#7d9f93] w-full font-bold h-14 justify-center "
+                  className="inline-flex items-center py-2 text-xs md:text-lg text-white bg-[#9EC9BA] rounded-lg hover:bg-[#7d9f93] w-full font-bold h-14 justify-center "
                 >
                   <FaGithub class="mr-2" />
                   View Code

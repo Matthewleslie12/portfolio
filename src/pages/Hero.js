@@ -4,8 +4,8 @@ import Images from "../componenets/Images";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col pt-5 md:flex-row ">
-      <div className="md:w-1/2 md:items-center flex">
+    <div className="flex flex-col pt-12 md:flex-row ">
+      <div className="md:w-full md:items-center flex">
         <div className="space-y-2">
           <p className="text-red-400 md:text-lg">Hey, I'm</p>
           <h4 className="font-bold text-2xl md:text-6xl">Matthew Leslie.</h4>
@@ -25,7 +25,7 @@ const Hero = () => {
           <Button text="Learn about me!" />
         </div>
       </div>
-      <div className="md:w-1/2">
+      <div className="md:w-full md:ml-20">
         <Images />
       </div>
     </div>

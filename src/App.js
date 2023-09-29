@@ -9,11 +9,10 @@ import Projects from "./pages/Projects";
 function App() {
   return (
     <>
-      <div className="px-8">
-        <Navbar />
-        <SideNav />
-      </div>
-      <div className="px-8 md:px-36">
+      <Navbar />
+      <SideNav />
+
+      <div className="px-8 md:px-16">
         <Hero />
         <About />
         <Tech />
